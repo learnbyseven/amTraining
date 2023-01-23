@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "*********Uninstalling Aspenmesh*********"
 sleep 1
-cp -r /home/ubuntu/.kube .
+#cp -r /home/ubuntu/.kube .
 sleep 3
 helm -n istio-system uninstall istio-egress
 sleep 3
