@@ -15,10 +15,6 @@ kubectl -n istio-system delete crd --all
 sleep 3
 kubectl -n istio-system delete jobs --all
 sleep 3
-kubectl delete ns istio-system
-#sleep 3
-#kubectl get clusterroles | grep aspen-mesh | awk kubectl '{print $1}' |xargs -n1 kubectl delete clusterrole 
-#sleep 1
-#kubectl get clusterroles | grep istio | awk kubectl '{print $1}' |xargs -n1 kubectl delete clusterrole 
+kubectl delete ns istio-system 
 sleep 3
 echo "*********Aspenmesh uninstalled - See you soon :) *********"
