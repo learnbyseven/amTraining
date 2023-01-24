@@ -1,4 +1,4 @@
-#for i in {1..7}; do time curl web-tier-svc.web-tier.svc.cluster.local; done
+#for i in {1..7}; do curl web-tier-svc.web-tier.svc.cluster.local; done
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
