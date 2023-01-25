@@ -19,4 +19,5 @@ sleep 3
 #sleep 3
 #kubectl get clusterroles | grep istio | awk kubectl '{print $1}' |xargs -n1 kubectl delete clusterrole
 #sleep 3
+#kubectl get ValidatingWebhookConfiguration -A
 echo "*********Aspenmesh uninstalled - See you soon :) *********"
