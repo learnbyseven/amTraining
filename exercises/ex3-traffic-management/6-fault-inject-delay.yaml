@@ -14,7 +14,7 @@ spec:
           exact: internal
     fault:
       delay:
-        fixedDelay: 1s
+        fixedDelay: 3s
         percentage:
            value: 70
     route:
