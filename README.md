@@ -13,17 +13,10 @@ app-tier-svc.app-tier.svc.cluster.local
 
 <img width="953" alt="image" src="https://user-images.githubusercontent.com/34051943/212863442-eb4f1ee3-597e-43d8-8ba7-a3ac280182af.png">
 
-### Envoy Decoded 
-<img width="989" alt="image" src="https://user-images.githubusercontent.com/34051943/213438872-a79f9487-aa71-40e6-b98d-8d8a94f3e0d6.png">
-
-<img width="988" alt="image" src="https://user-images.githubusercontent.com/34051943/213439741-d0dbf92d-1984-4ab6-bc99-efac0aeec326.png">
-
-
-
-### PACKET-FLOW
+### LIFECYCLE OF A PACKET
 <img width="1264" alt="image" src="https://user-images.githubusercontent.com/34051943/212861736-0f6de294-09e9-4eea-925f-d1add65b40ac.png">
-
-### Applying conf
+<img width="989" alt="image" src="https://user-images.githubusercontent.com/34051943/213438872-a79f9487-aa71-40e6-b98d-8d8a94f3e0d6.png">
+<img width="988" alt="image" src="https://user-images.githubusercontent.com/34051943/213439741-d0dbf92d-1984-4ab6-bc99-efac0aeec326.png">
 <img width="901" alt="image" src="https://user-images.githubusercontent.com/34051943/212995845-dc7d75f4-db5a-49eb-96e0-a4a9e7e040b3.png">
 
 ### Observability 
