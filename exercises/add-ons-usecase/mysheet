@@ -15,3 +15,6 @@ prob3
 ex 3tls passthrough 
 - gw namespace 
 
+
+Cheet-sheet
+kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR == 2 {print $1}') -c istio-proxy -- pilot-agent
