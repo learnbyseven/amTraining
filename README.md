@@ -22,6 +22,8 @@ app-tier-svc.app-tier.svc.cluster.local
 ### Observability 
 <img width="654" alt="image" src="https://user-images.githubusercontent.com/34051943/214751361-17008e89-bd49-4e62-b84d-5434bd4062c6.png">
 
+### PORTs
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/34051943/215030213-c41b6c1b-07d1-44c8-9f0a-d1a1e57c9e81.png">
 
 
 ## BUILDs Optional 
