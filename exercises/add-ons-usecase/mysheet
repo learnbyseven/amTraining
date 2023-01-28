@@ -18,5 +18,7 @@ ex 3tls passthrough
 
 
 Cheet-sheet
-kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR == 2 {print $1}') -c istio-proxy -- pilot-agent
-curl localhost:15000/certs (show spiffe) 
+Grab name : kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR == 2 {print $1}') -c istio-proxy -- pilot-agent
+Envoy config dump : curl localhost:15000/certs (show spiffe) 
+Log level setup : istioctl pc log app-tier-deployment-v1-6f489c8589-4s2kz.app-tier --level rbac:debug
+
