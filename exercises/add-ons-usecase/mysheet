@@ -1,8 +1,9 @@
+k9S install
+-----------------------------------------------------------------------------
 
 https://webinstall.dev/k9s/
-
 curl -L -k https://ec2-15-207-229-119.ap-south-1.compute.amazonaws.com/k9s -O
-
+------------------------------------------------------------------------------
 Prob-1
 503 exercise traffic shifting
 istioctl pc c app-tier-deployment-v1-d89564d68-66fln.app-tier --fqdn app-tier-svc.app-tier.svc.cluster.local
@@ -18,3 +19,4 @@ ex 3tls passthrough
 
 Cheet-sheet
 kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR == 2 {print $1}') -c istio-proxy -- pilot-agent
+curl localhost:15000/certs (show spiffe) 
