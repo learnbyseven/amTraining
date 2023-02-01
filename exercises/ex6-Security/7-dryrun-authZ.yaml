@@ -1,6 +1,6 @@
-#set log level to debug $istioctl pc log app-tier-deployment-v1-6f489c8589-4s2kz.app-tier --level rbac:debug
-#Optionalkubectl annotate --overwrite authorizationpolicies deny-path-headers -n foo istio.io/dry-run='true'
-#kubectl -n app-tier logs app-tier-deployment-v1-6f489c8589-4s2kz  -c istio-proxy | grep "shadow denied"
+#Be mindful ! check the pod name before using $istioctl ps ; Then set log level to debug $istioctl pc log app-tier-deployment-v1-6f489c8589-4s2kz.app-tier --level rbac:debug
+#Ignore for now ! Optionalkubectl annotate --overwrite authorizationpolicies deny-path-headers -n foo istio.io/dry-run='true'
+#Be mindful ! check the pod name before using $istioctl ps ; kubectl -n app-tier logs app-tier-deployment-v1-6f489c8589-4s2kz  -c istio-proxy | grep "shadow denied"
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
