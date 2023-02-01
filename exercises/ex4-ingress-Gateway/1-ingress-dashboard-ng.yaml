@@ -1,7 +1,8 @@
-# Change /etc/hosts file with below example entrie if ingress running 
-#On worker1 
+#kubectl -n istio-system get po -o wide | grep -i ingress
+#Change /etc/hosts file with below example on desktop client system 
+#If ingress gateway POD running on worker1, Be mindful IP could be not same as below example 
 #10.1.1.5 worker1 dashboard.f5.local
-#On worker2 
+#If ingress gateway POD running on worker2 , Be mindful IP could be not same as below example
 #10.1.1.6 worker2 dashboard.f5.local
 ---
 apiVersion: networking.istio.io/v1alpha3
