@@ -1,0 +1,1 @@
+$ kubectl create -f https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises/ex2-sample-apps-install/1-sample-apps-deployment/test.yaml
