@@ -15,7 +15,7 @@ spec:
       mode: SIMPLE
       credentialName: db-credential # must be the same as secret
     hosts:
-    - worker1.f5.local
+    - dashboard.f5.local
 ---
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
@@ -24,7 +24,7 @@ metadata:
   namespace: web-tier
 spec:
   hosts:
-  - worker1.f5.local
+  - dashboard.f5.local
   gateways:
   - db-secure-gw
   http:
