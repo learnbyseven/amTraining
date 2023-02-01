@@ -14,7 +14,7 @@ spec:
     tls:
       mode: PASSTHROUGH
     hosts:
-    - worker1.f5.local
+    - myapp.f5.local
 
 ---
 apiVersion: networking.istio.io/v1beta1
@@ -31,7 +31,7 @@ spec:
   - match:
     - port: 443
       sniHosts:
-      - worker1.f5.local
+      - myapp.f5.local
     route:
     - destination:
         host: myapp.myapp.svc.cluster.local
