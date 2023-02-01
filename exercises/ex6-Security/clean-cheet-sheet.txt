@@ -1,0 +1,9 @@
+kubectl -n web-tier delete peerauthentication relax-mtls 
+kubectl -n web-tier delete authorizationpolicy jwt-authz 
+kubectl -n web-tier delete authorizationpolicy path-jwt-authz
+kubectl -n web-tier delete  requestauthentication jwt-authn 
+kubectl -n app-tier delete authorizationpolicy http-authz
+kubectl -n app-tier delete authorizationpolicy ip-authz
+kubectl -n app-tier delete authorizationpolicy  dry-run-authz
+kubectl get authorizationpolicy -A 
+kubectl get requestauthentication -A 
