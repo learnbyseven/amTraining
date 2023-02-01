@@ -24,7 +24,7 @@ metadata:
   namespace: myapp
 spec:
   hosts:
-  - worker1.f5.local
+  - myapp.f5.local
   gateways:
   - myapp-gateway
   tls:
