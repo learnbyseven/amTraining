@@ -1,7 +1,8 @@
-# Change /etc/hosts file with below entries 
-#10.1.1.4 master master.f5.local
-#10.1.1.5 worker1 worker1.f5.local
-#10.1.1.6 worker2 workeer2.f5.local
+# Change /etc/hosts file with below example entrie if ingress running 
+#On worker1 
+#10.1.1.5 worker1 dashboard.f5.local
+#On worker2 
+#10.1.1.6 worker2 dashboard.f5.local
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
@@ -17,7 +18,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "worker1.f5.local"
+    - "dashboard.f5.local"
 ---
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
@@ -26,7 +27,7 @@ metadata:
   namespace: web-tier
 spec:
   hosts:
-  - worker1.f5.local
+  - dashboard.f5.local
   gateways:
   - db-gateway
   http:
