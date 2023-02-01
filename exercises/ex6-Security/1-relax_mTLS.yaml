@@ -1,3 +1,5 @@
+# Log onto test pod in namespace test
+# $curl http://curl web-tier-svc.web-tier, Response 200 means success 
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:
