@@ -1,3 +1,6 @@
+# Be mindful check the ip address of your web-tier or source pod which you want to deny to access app-tier
+# Gain IP , use $ kubectl -n web-tier describe po
+# To test ; $ curl http://web-tier-svc.web-tier 
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
@@ -11,7 +14,7 @@ spec:
   rules:
   - from:
     - source:
-        ipBlocks: ["172.100.235.182/32"]
+        ipBlocks: ["172.100.235.147/32"]
         #namespaces: ["web-tier"]
         #principals: ["cluster.local/ns/web-tier/sa/defaut"]
     to:
