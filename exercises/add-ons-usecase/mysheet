@@ -21,4 +21,5 @@ Cheet-sheet
 Grab name : kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR == 2 {print $1}') -c istio-proxy -- pilot-agent
 Envoy config dump : curl localhost:15000/certs (show spiffe) 
 Log level setup : istioctl pc log app-tier-deployment-v1-6f489c8589-4s2kz.app-tier --level rbac:debug
+istioctl dashboard controlz deployment/istiod.istio-system --address 172.31.12.84 --port 8181
 
