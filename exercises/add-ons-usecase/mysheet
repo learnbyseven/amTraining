@@ -22,4 +22,5 @@ Grab name : kubectl -n web-tier exec -it $(kubectl -n web-tier get po | awk 'FNR
 Envoy config dump : curl localhost:15000/certs (show spiffe) 
 Log level setup : istioctl pc log app-tier-deployment-v1-6f489c8589-4s2kz.app-tier --level rbac:debug
 istioctl dashboard controlz deployment/istiod.istio-system --address 172.31.12.84 --port 8181
+istioctl dashboard envoy app-tier-deployment-v1-7d679dc6bb-dwk6w.app-tier --address 172.31.12.84 --port 8181
 
