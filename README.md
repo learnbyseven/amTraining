@@ -1,5 +1,5 @@
 # amTraining
-Istio AM Fundamental Training 
+Istio AM Foundation Training 
 
 ### Application Architecture
 - WEB-TIER Frontend Application Service 
