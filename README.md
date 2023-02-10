@@ -2,6 +2,8 @@
 Istio AM Foundation Training 
 
 ### Application Architecture
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/34051943/218008037-2b2918dc-8e28-4bbb-99c8-ebc95c91a80b.png">
+
 - WEB-TIER Frontend Application Service 
 ```css
 web-tier-svc.web-tier.svc.cluster.local
@@ -10,6 +12,8 @@ web-tier-svc.web-tier.svc.cluster.local
 ```css
 app-tier-svc.app-tier.svc.cluster.local
 ```
+### Envoy Internals 
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/34051943/218008178-af540415-9427-46d7-b4e9-3619c9e75533.png">
 
 
 ## BUILDs Optional 
