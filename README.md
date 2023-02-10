@@ -11,20 +11,6 @@ web-tier-svc.web-tier.svc.cluster.local
 app-tier-svc.app-tier.svc.cluster.local
 ```
 
-<img width="953" alt="image" src="https://user-images.githubusercontent.com/34051943/212863442-eb4f1ee3-597e-43d8-8ba7-a3ac280182af.png">
-
-### LIFECYCLE OF A PACKET
-<img width="1264" alt="image" src="https://user-images.githubusercontent.com/34051943/212861736-0f6de294-09e9-4eea-925f-d1add65b40ac.png">
-<img width="989" alt="image" src="https://user-images.githubusercontent.com/34051943/213438872-a79f9487-aa71-40e6-b98d-8d8a94f3e0d6.png">
-<img width="988" alt="image" src="https://user-images.githubusercontent.com/34051943/213439741-d0dbf92d-1984-4ab6-bc99-efac0aeec326.png">
-<img width="901" alt="image" src="https://user-images.githubusercontent.com/34051943/212995845-dc7d75f4-db5a-49eb-96e0-a4a9e7e040b3.png">
-
-### Observability 
-<img width="654" alt="image" src="https://user-images.githubusercontent.com/34051943/214751361-17008e89-bd49-4e62-b84d-5434bd4062c6.png">
-
-### PORTs
-<img width="830" alt="image" src="https://user-images.githubusercontent.com/34051943/215030213-c41b6c1b-07d1-44c8-9f0a-d1a1e57c9e81.png">
-
 
 ## BUILDs Optional 
 
