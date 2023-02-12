@@ -55,6 +55,14 @@ curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises
 ### Traffic-Management 
 <img width="331" alt="image" src="https://user-images.githubusercontent.com/34051943/218301323-80fa19e9-fc03-48b5-99e4-703ef71fd308.png">
 
+### Ingress Gateway
+<img width="331" alt="image" src="https://user-images.githubusercontent.com/34051943/218301397-9592d809-3673-4089-b744-295276b2fb1b.png">
+
+### Egress-Gateway
+<img width="331" alt="image" src="https://user-images.githubusercontent.com/34051943/218301430-04bddc84-8b62-4137-9d64-00ab4ec07df3.png">
+
+### Security 
+<img width="331" alt="image" src="https://user-images.githubusercontent.com/34051943/218301449-e37a7ab5-77fb-4475-bd92-36ae9ebeea5e.png">
 
 
 
