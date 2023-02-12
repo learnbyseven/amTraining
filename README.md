@@ -2,7 +2,7 @@
 Istio AM Foundation Training 
 
 ### Application Architecture
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/34051943/218008037-2b2918dc-8e28-4bbb-99c8-ebc95c91a80b.png">
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/34051943/218299128-8ce3ba32-21a4-4542-9ec0-3314c4324bfe.png">
 
 - WEB-TIER Frontend Application Service 
 ```css
