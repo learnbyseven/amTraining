@@ -1,0 +1,29 @@
+## METHOD - 2 
+## istioctl kube-inject -f 2-m.yaml > 2-m-injected.yaml
+## kubectl create -f 2-m-injected.yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: 2-m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 2-m
+  namespace: 2-m
+  labels:
+    app: 2-m
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 2-m
+  template:
+    metadata:
+      labels:
+        app: 2-m
+    spec:
+      containers:
+      - name: 2-m
+        image: giriraj789/tester:v1

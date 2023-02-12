@@ -1,5 +1,84 @@
-##istioctl kube-inject -f web-tier-dep.yaml > web-tier-deployment-with-istio.yaml
-## kubectl create -f web-tier-deployment-with-istio.yaml
+## Test-tier --> Web-tier-- > App-tier-v1
+## Test-tier ##
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: test-tier
+  labels:
+    istio-injection: enabled
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-tier
+  namespace: test-tier
+  labels:
+    app: test-tier
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-tier
+  template:
+    metadata:
+      labels:
+        app: test-tier
+    spec:
+      containers:
+      - name: test-tier
+        image: giriraj789/tester:v1
+## APP-TIER V1 
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-tier
+  labels:
+    istio-injection: enabled
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-tier-deployment-v1
+  namespace: app-tier
+  labels:
+    app: app-tier
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-tier
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: app-tier
+        version: v1
+    spec:
+      containers:
+      - name: app-tier-v1
+        image: docker.io/giriraj789/informatica:v1
+        ports:
+        - containerPort: 80
+          name: http-v1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-tier-svc
+  namespace: app-tier
+spec:
+  selector:
+    app: app-tier
+  ports:
+    - name: http-svc
+      protocol: TCP
+      port: 80
+      targetPort: 80
+
+## WEB-TIER 
 ---
 apiVersion: v1
 kind: Namespace
@@ -96,3 +175,4 @@ spec:
     protocol: TCP
   selector:
     app: web-tier
+---
