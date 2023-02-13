@@ -4,11 +4,11 @@ Istio AM Foundation Training
 ### Application Architecture
 <img width="777" alt="image" src="https://user-images.githubusercontent.com/34051943/218299128-8ce3ba32-21a4-4542-9ec0-3314c4324bfe.png">
 
-- WEB-TIER Frontend Application Service 
+- Frontend Application Service 
 ```css
 web-tier-svc.web-tier.svc.cluster.local
 ```
-- APP-TIER Backend Application Service
+- Backend Application Service
 ```css
 app-tier-svc.app-tier.svc.cluster.local
 ```
