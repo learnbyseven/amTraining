@@ -1,5 +1,5 @@
 ## METHOD - 2 
-## istioctl kube-inject -f 2-m.yaml > 2-m-injected.yaml
+## istioctl kube-inject -f exercises/2-sample-apps-install/service_proxy/2-m.yaml > exercises/2-sample-apps-install/service_proxy/2-m-injected.yaml
 ## kubectl create -f exercises/2-sample-apps-install/service_proxy/2-m-injected.yaml
 ---
 apiVersion: v1
