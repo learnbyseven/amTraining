@@ -34,7 +34,7 @@ curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises
 ```
 ### aM-Install-UDF 
 ```css
-curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises/ex1-am-install/1-am-install/udf-install_Aspenmesh.sh | bash
+curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises/1-am-install/udf/udf-install_Aspenmesh.sh | bash 
 ```
 ### aM-Uninstall
 ```css
