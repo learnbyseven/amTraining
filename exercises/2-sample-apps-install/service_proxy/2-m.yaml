@@ -1,4 +1,5 @@
-## METHOD - 2 
+## METHOD - 2 (From amTraining directory)
+## cp ../aspenmesh-carrier-grade-1.14.5-am1/bin/istioctl /usr/local/bin/
 ## istioctl kube-inject -f exercises/2-sample-apps-install/service_proxy/2-m.yaml > exercises/2-sample-apps-install/service_proxy/2-m-injected.yaml
 ## kubectl create -f exercises/2-sample-apps-install/service_proxy/2-m-injected.yaml
 ---
