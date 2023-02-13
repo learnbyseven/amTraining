@@ -13,7 +13,9 @@ web-tier-svc.web-tier.svc.cluster.local
 app-tier-svc.app-tier.svc.cluster.local
 ```
 ### Envoy Internals 
-<img width="750" alt="image" src="https://user-images.githubusercontent.com/34051943/218009834-8471f1b7-2fde-4d1a-9f52-3f0d80fdd1c7.png">
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/34051943/218376912-0ddc4c92-f83c-42bf-b509-c53907cd8ac9.png">
+
 
 ## BUILDs Optional 
 
