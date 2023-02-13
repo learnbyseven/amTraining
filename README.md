@@ -64,6 +64,10 @@ curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises
 ### Security 
 <img width="331" alt="image" src="https://user-images.githubusercontent.com/34051943/218301449-e37a7ab5-77fb-4475-bd92-36ae9ebeea5e.png">
 
+###
+Blueprint
+https://udf.f5.com/b/a8a49894-9532-44e7-be9e-accbf9118ddd#documentation.
+
 
 
 
