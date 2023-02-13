@@ -2,7 +2,7 @@
 ## kubectl create ns 1-m
 ## kubectl label ns 1-m istio-injection=enabled 
 ## kubectl get ns -L istio-injection
-## kubectl create -f 1-m.yaml
+## kubectl create -f exercises/2-sample-apps-install/service_proxy/1-m.yaml
 ---
 apiVersion: apps/v1
 kind: Deployment
