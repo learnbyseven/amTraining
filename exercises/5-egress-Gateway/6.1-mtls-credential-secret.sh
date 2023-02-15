@@ -1,1 +1,1 @@
-kubectl create -n istio-system secret generic mtls-credential --from-file=tls.key=exercises/ex5-egress-Gateway/certs/server.key --from-file=tls.crt=exercises/ex5-egress-Gateway/certs/server.crt --from-file=ca.crt=exercises/ex5-egress-Gateway/certs/ca.crt
+kubectl create -n istio-system secret generic mtls-credential --from-file=tls.key=exercises/5-egress-Gateway/certs/server.key --from-file=tls.crt=exercises/5-egress-Gateway/certs/server.crt --from-file=ca.crt=exercises/5-egress-Gateway/certs/ca.crt
