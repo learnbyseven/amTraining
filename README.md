@@ -37,7 +37,7 @@ curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises
 ```
 ### aM-Install-ALL-Components-UDF
 ```css
-curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises/1-am-install/3-am-all-components-install/udf_install_Aspenmesh_all.sh | bash
+curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/exercises/1-am-install/udf-all/udf_install_Aspenmesh_all.sh | bash
 ```
 ## Exercise 1 AM deployment BYOK
 
