@@ -14,7 +14,7 @@ spec:
   rules:
   - from:
     - source:
-        ipBlocks: ["172.100.235.147/32"]
+        ipBlocks: ["172.100.189.83/32"]
         #namespaces: ["web-tier"]
         #principals: ["cluster.local/ns/web-tier/sa/defaut"]
     to:
