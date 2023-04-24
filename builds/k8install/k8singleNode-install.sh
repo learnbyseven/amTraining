@@ -1,5 +1,5 @@
 ## Execute using Simple Script for Simple people :) 
-## curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/edit/main/builds/k8install/k8singleNode-install.sh | bash 
+## curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/builds/k8install/k8singleNode-install.sh | bash 
 #!/bin/bash
 echo "*********************************************"
 echo "K8s vanilla installation begins using KubeADM"
