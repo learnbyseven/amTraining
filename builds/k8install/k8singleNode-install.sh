@@ -62,15 +62,15 @@ sleep 1
 kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-bind-port=6443 
 mkdir -p $HOME/.kube && cp -i /etc/kubernetes/admin.conf $HOME/.kube/config && sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
-echo "**************************************"
-echo "SDN - CALICO INSTALLATION STARTING NOW"
-echo "**************************************"
-sleep 1
-kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
-sleep 1
-echo "*************************************************"
-echo "K8s Installation Finihed , RUN "kubectl get nodes"
-echo "*************************************************"
+#echo "**************************************"
+#echo "SDN - CALICO INSTALLATION STARTING NOW"
+#echo "**************************************"
+#sleep 1
+#kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+#sleep 1
+#echo "*************************************************"
+#echo "K8s Installation Finihed , RUN "kubectl get nodes"
+#echo "*************************************************"
 
 ## OPTIONAL
 # **********
