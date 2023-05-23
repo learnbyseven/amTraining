@@ -52,7 +52,7 @@ EOF
 sleep 1 
 apt-get update
 sleep 2
-apt-get install -y kubelet=1.23.1-00 kubeadm=1.23.1-00 kubectl=1.23.1-00
+apt-get install -y kubelet=1.25.10-00 kubeadm=1.25.10-00 kubectl=1.25.10-00
 swapoff -a
 sleep 2
 echo "*********************************"
@@ -61,7 +61,7 @@ echo "*********************************"
 sleep 1
 kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-bind-port=6443 
 mkdir -p $HOME/.kube && cp -i /etc/kubernetes/admin.conf $HOME/.kube/config && sudo chown $(id -u):$(id -g) $HOME/.kube/config
-kubectl taint nodes --all node-role.kubernetes.io/master-
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
 #echo "**************************************"
 #echo "SDN - CALICO INSTALLATION STARTING NOW"
 #echo "**************************************"
