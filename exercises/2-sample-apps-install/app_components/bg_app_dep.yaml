@@ -1,0 +1,90 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bg
+  labels:
+    istio-injection: disabled
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue
+  namespace: bg
+  labels:
+    app: blue
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blue
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: blue
+        version: v1
+    spec:
+      containers:
+      - name: blue
+        image: docker.io/giriraj789/informatica:v1
+        ports:
+        - containerPort: 80
+          name: http-blue
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: blue
+  namespace: bg
+spec:
+  selector:
+    app: blue
+  ports:
+    - name: http-blue
+      protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green
+  namespace: bg
+  labels:
+    app: green
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: green
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: green
+        version: v2
+    spec:
+      containers:
+      - name: green
+        image: docker.io/giriraj789/informatica:v2
+        ports:
+        - containerPort: 80
+          name: http-green
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: green
+  namespace: bg
+spec:
+  selector:
+    app: green
+  ports:
+    - name: http-green
+      protocol: TCP
+      port: 80
+      targetPort: 80
+---
