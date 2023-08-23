@@ -1,0 +1,49 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: green
+  labels:
+    istio-injection: disabled
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green
+  namespace: green
+  labels:
+    app: green
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: green
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: green
+        version: v2
+    spec:
+      containers:
+      - name: green
+        image: docker.io/giriraj789/informatica:v2
+        ports:
+        - containerPort: 80
+          name: http-green
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: green
+  namespace: green
+spec:
+  selector:
+    app: green
+  ports:
+    - name: http-green
+      protocol: TCP
+      port: 80
+      targetPort: 80
+---
