@@ -6,3 +6,4 @@ rm -rf ~/.kube/
 rm -rf /etc/kubernetes
 rm -rf /var/lib/kubelet
 apt-get remove --purge kubelet kubeadm kubectl -y
+apt remove kubelet kubeadm kubectl -y 
