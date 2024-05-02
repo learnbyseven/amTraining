@@ -70,6 +70,7 @@ sudo echo "k8s control plane installation finished over here, In case you would 
 #sudo sleep 1
 #sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/tigera-operator.yaml
 #sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/custom-resources.yaml
+#sudo kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 #sudo sleep 1
 #sudo echo "*************************************************"
 #sudo echo "K8s Installation Finihed , RUN "kubectl get nodes"
