@@ -12,7 +12,7 @@ sudo rm /var/cache/apt/archives/lock
 sudo cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 br_netfilter
 EOF
-sleep 1
+sudo sleep 1
 sudo cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
@@ -20,7 +20,7 @@ EOF
 sudo sysctl --system
 sleep 2
 sudo apt-get update -y 
-sleep 1
+sudo sleep 1
 sudo export DEBIAN_FRONTEND=noninteractive
 sudo echo "********************************************************"
 sudo echo "DOCKER as a Contrainer run time installation in progress"
