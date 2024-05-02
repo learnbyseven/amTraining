@@ -1,4 +1,5 @@
 ## Execute using Simple Script for Simple people :) 
+## This is for Debian/Ubuntu base OS systems !!!
 ## curl -s https://raw.githubusercontent.com/learnbyseven/amTraining/main/builds/k8install/k8singleNode-install.sh | bash 
 #!/bin/bash
 sudo echo "*********************************************"
